@@ -31,7 +31,7 @@ async def _(event):
         await asyncio.sleep(1)
         await event.edit("Day")
         await asyncio.sleep(0.8)
-        await event.edit("`Good Morning Have A Nice Day`")
+        await event.edit("`Good Morning Sunshine Have A Nice Day`")
         
 @get(pattern=".congo")
 async def congo(event):
@@ -82,10 +82,6 @@ async def spam(event):
 
 
 # if user message .hi then bot will reply with many ways
-@get(pattern=".hi")
-async def hi(event):
-    await event.edit(random.choice(["`Hi`", "`Hey`", "`Heya`", "`Hiya`", "`Hi!`", "`Hey!`", "`Heya!`", "`Hiya!`", "`Hii sunshine!`"]), parse_mode="html")
-
 
 # if user message .hello then bot will reply with many ways
 @get(pattern=".hello")
